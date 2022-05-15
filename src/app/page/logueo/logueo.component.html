@@ -1,0 +1,45 @@
+<div class="logueador flex mt-10" >
+<div class="contenedor1 flex flex-row ">
+  <div class="cuadro1 w-1/3 mt-20">
+    <div class="cerrado">
+
+    <form  class="form1" action="#">
+
+      <h1>Inicia Sesión</h1>
+      <div class="formu">
+      <label class="contra">Correo Electronico</label>
+      <input class="controls" #email (focusin)="mostrar()" autocomplete="none" (focusout)="ocultar()" type="email" placeholder="Ingrese su correo electronico" >
+      <label class="contra">Contraseña</label>
+      <input class="controls" #contra (focusin)="mostrar()" autocomplete="none" (focusout)="ocultar()"  type="password" placeholder="Ingresa tu contraseña" >
+      </div>
+      <div class="forgot">
+        <a routerLink="/Recuperar" aria-current="page" href="#" class="hover:text-dazzle-strong">
+          ¿Olvidaste tu contraseña?
+        </a>
+        <!--<a  (click)="relacion()"  >¿Olvidaste tu contraseña? </a>-->
+      </div>
+
+      <div class="btn1">
+        <button (click)="Login(email.value,contra.value)"  class="registra" type="button" >Inicia Sesion</button>
+
+      </div>
+
+      <div class="sing">
+        <p>¿No eres cliente?  <a class="enlace"  routerLink="/Registro"><button  class="registra" type="button" >Registrate aquí</button></a></p>
+
+      </div>
+
+
+
+
+    </form>
+    </div>
+
+  </div>
+  <div class="imagen w-2/3 mt-20">
+    <img src="assets/mockup1.jpg" alt="">
+  </div>
+
+</div>
+
+</div>
