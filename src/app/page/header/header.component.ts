@@ -99,6 +99,7 @@ Registro:boolean=false;
 Carrito:boolean=false;
 Mainu:boolean=false;
 Busqueda:string="";
+  Busqueda1:string="";
   EstadoLogin:boolean=false
   visibleSidebar1: boolean=false;
   visibleSidebar4: any;
@@ -107,6 +108,7 @@ Busqueda:string="";
 
 
     const data=this.Busqueda;
+
     const navigationExtras: NavigationExtras = {state: { categoria: 0,sub:data }};
     this.router.navigate(["/Productos/search"+data],navigationExtras);
 

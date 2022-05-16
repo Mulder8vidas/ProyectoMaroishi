@@ -21,16 +21,17 @@
             <p-accordionTab [selected]="true" [transitionOptions]="'100ms'" header="Agua">
               <ul>
                 <li>
-                  <a routerLink="/Productos/aguapvc" [state]="{ categoria: 1,sub:'pvc' }">Tuberias PVC</a>
+                  <a [state]="{ categoria: 1,sub:'Tuberias PVC' }" routerLink="/Productos/Tuberias PVC">Tuberias PVC</a>
                 </li>
-                <li><a [state]="{ categoria: 1,sub:'Conexiones de Agua PVC' }" routerLink="/Productos/Tuberias PVC">Conexiones de Agua PVC</a></li>
+                <li><a [state]="{ categoria: 1,sub:'Conexiones de Agua PVC' }" routerLink="/Productos/aguapvcpvc">Conexiones
+                  de Agua PVC</a></li>
                 <li><a [state]="{ categoria: 1,sub:'Conexiones de agua galvanizado' }"
                        routerLink="/Productos/aguapvcgalva">Conexiones de Agua Galvanizado</a></li>
-                <li><a href="">Medidores</a></li>
+                <li><a [state]="{ categoria: 6,sub:'Medidores' }" routerLink="/Productos/Medidores">Medidores</a></li>
                 <li><a [state]="{ categoria: 1,sub:'Llaves con Universal' }" routerLink="/Productos/agualuni">Llaves con universal</a></li>
                 <li><a [state]="{ categoria: 1,sub:'Teflones' }" routerLink="/Productos/aguateflo">Teflones</a></li>
                 <li><a [state]="{ categoria: 1,sub:'Llaves de paso' }" routerLink="/Productos/canospasollave">Llaves de paso</a></li>
-                <li><a href="">Check</a></li>
+                <li><a [state]="{ categoria: 1,sub:'Check' }" routerLink="/Productos/check">Check </a></li>
               </ul>
             </p-accordionTab>
             <p-accordionTab [transitionOptions]="'100ms'" header="Desagúe">
@@ -145,13 +146,10 @@
             <p-button (click)="visibleSidebar4 = false" icon="fas fa-window-close" type="button"></p-button>
           </div>
           <div class="busq2">
-            <input class="bsqu" placeholder="¿Que busca?" type="text">
+            <input [(ngModel)]="Busqueda" class="w-96 inputsisto" pInputText placeholder="¿Que busca??" type="text">
             <i (click)="buscarProductos()" class="pi pi-search lupa "></i>
           </div>
-          <span class="p-input-icon-right">
-        <i (click)="buscarProductos()" class="pi pi-search lupa "></i>
-        <input [(ngModel)]="Busqueda" class="w-96 inputsisto" pInputText placeholder="¿Que busca??" type="text">
-</span>
+
         </p-sidebar>
         <p-button (click)="visibleSidebar4 = true" class="mr-2" icon="fas fa-search" type="button"></p-button>
       </div>
@@ -224,7 +222,7 @@
               emergencia</a></div>
             <div><a  [state]="{ categoria: 6,sub:'Tableros'}" routerLink="/Productos/luzluc">Tableros</a></div>
             <div><a [state]="{ categoria: 6,sub:'Medidores' }" routerLink="/Productos/Medidores">Medidores</a></div>
-            <div><a [state]="{ categoria: 6,sub:'Caja de Luz' }" routerLink="/Productos/luzcaja">Cajas de Lúz</a></div>
+            <div><a [state]="{ categoria: 6,sub:'Cajas de luz' }" routerLink="/Productos/luzcaja">Cajas de Lúz</a></div>
 
 
           </div>
@@ -237,7 +235,7 @@
           <div class="menu9">
             <div><a [state]="{ categoria: 5,sub:'Tuberias PVC' }" routerLink="/Productos/caltefteflo">Tuberias PVC</a>
             </div>
-            <div><a href="#">Conexiones de Agua PVC</a></div>
+            <div><a [state]="{categoria:5,sub:'Conexiones CPVC'}" routerLink="/Productos/ConexionCPVC">Conexiones de Agua PVC</a></div>
             <div><a [state]="{ categoria: 5,sub:'Teflones' }" routerLink="/Productos/caltef">Teflones</a></div>
           </div>
         </div>
@@ -250,23 +248,21 @@
               Oatey</a></div>
             <div><a [state]="{ categoria: 7,sub:'Pegamentos' }" routerLink="/Productos/pegatodomento">Pegamentos</a>
             </div>
-            <div><a [state]="{ categoria: 7,sub:'Siliconas' }" routerLink="/Productos/pegasili">Siliconas</a></div>
-            <!--<div><a href="#">Terocal</a></div>
-            <div><a href="#">Soldimix</a></div>
-            <div><a href="#">Adex</a></div>-->
+            <div><a [state]="{ categoria: 7,sub:'Silicona' }" routerLink="/Productos/pegasili">Siliconas</a></div>
+
           </div>
         </div>
       </li>
       <li class="desplegar5"><a href="#">GRIFERIA</a>
         <div class="sub-menu5">
           <div class="menu5">
-            <div><a [state]="{ categoria: 4,sub:'Canos de jardin' }" href="#" routerLink="/Productos/grifartcanos">Caños
+            <div><a [state]="{ categoria: 4,sub:'Canos de jardin' }" routerLink="/Productos/caños">Caños
               de jardin</a></div>
-            <div><a href="#">Llaves de ducha</a></div>
-            <div><a [state]="{ categoria: 4,sub:'Articulos de Ducha' }" routerLink="/Productos/grifart">Articulos para
+            <div><a [state]="{ categoria: 4,sub:'Llaves de ducha' }" routerLink="/Productos/Llaves_ducha">Llaves de ducha</a></div>
+            <div><a [state]="{ categoria: 4,sub:'Articulos para Duchas' }" routerLink="/Productos/grifart">Articulos para
               Duchas</a></div>
-            <div><a href="#">Llaves de cocina cisne</a></div>
-            <div><a href="#">Difusor de ducha y manguera</a></div>
+            <div><a [state]="{ categoria: 4,sub:'Llaves de cocina cisne' }" routerLink="/Productos/Cocina_Cisne">Llaves de cocina cisne</a></div>
+            <div><a [state]="{ categoria: 4,sub:'Difusor de ducha y manguera' }" routerLink="/Productos/Difusor_ducha">Difusor de ducha y manguera</a></div>
             <div><a href="#">Rejillas</a></div>
             <div><a href="#">Sumideros</a></div>
           </div>
@@ -277,7 +273,7 @@
           <div class="menu6">
             <div><a href="#">Tubos de abasto</a></div>
             <div><a href="#">Anillo de cera</a></div>
-            <div><a href="#">Productos varios</a></div>
+            <div><a [state]="{ categoria: 44,sub:'Productos Varios' }" routerLink="/Productos/Difusor_ducha">Productos varios</a></div>
 
           </div>
         </div>
@@ -285,14 +281,14 @@
       <li class="desplegar7"><a href="#">HERRAMIENTAS </a>
         <div class="sub-menu7">
           <div class="menu7">
-            <div><a href="#">Herramientas en General</a></div>
-            <div><a href="#">Herramientas de Pintura</a></div>
-            <div><a href="#">Herramientas de corte</a></div>
+            <div><a [state]="{ categoria: 3,sub:'Herramientas en general' }" routerLink="/Productos/herrmientas_general">Herramientas en General</a></div>
+            <div><a [state]="{ categoria: 3,sub:'Herramientas de Pintura ' }" routerLink="/Productos/herramientas_pintura">Herramientas de Pintura</a></div>
+            <div><a [state]="{ categoria: 3,sub:'Herramientas de corte' }" routerLink="/Productos/herramientas_corte">Herramientas de corte</a></div>
             <div><a [state]="{ categoria: 3,sub:'Chapa de puerta' }" routerLink="/Productos/herrachapa">Chapas de
               puerta</a></div>
             <div><a [state]="{ categoria: 3,sub:'Plasticos y mallas' }" routerLink="/Productos/herrpla">Plasticos y
               Mallas</a></div>
-            <div><a href="#">Guantes</a></div>
+            <div><a [state]="{ categoria: 3,sub:'Guantes' }" routerLink="/Productos/herrpla">Guantes</a></div>
 
           </div>
         </div>
@@ -301,12 +297,12 @@
       <li class="desplegar8"><a href="#"> LIMPIEZA</a>
         <div class="sub-menu8">
           <div class="menu8">
-            <div><a href="#">Escobas y recogedores</a></div>
-            <div><a href="#">Desinfectantes</a></div>
-            <div><a href="#">Ambientadores</a></div>
-            <div><a href="#">Ceras</a></div>
-            <div><a href="#">Acidos y Antioxidantes</a></div>
-            <div><a href="#">Lejias</a></div>
+            <div><a [state]="{ categoria: 34,sub:'Escobas y recogedores' }" routerLink="/Productos/Escobas">Escobas y recogedores</a></div>
+            <div><a [state]="{ categoria: 34,sub:'Desinfectantes' }" routerLink="/Productos/Desinfectantes">Desinfectantes</a></div>
+            <div><a [state]="{ categoria: 34,sub:'Ambientadores' }" routerLink="/Productos/Escobas">Ambientadores</a></div>
+            <div><a [state]="{ categoria: 34,sub:'Ceras' }" routerLink="/Productos/Ceras">Ceras</a></div>
+            <div><a [state]="{ categoria: 34,sub:'Acidos y Antioxidantes' }" routerLink="/Productos/Acidos">Acidos y Antioxidantes</a></div>
+            <div><a [state]="{ categoria: 34,sub:'Lejias' }" routerLink="/Productos/Lejias">Lejias</a></div>
 
 
           </div>
