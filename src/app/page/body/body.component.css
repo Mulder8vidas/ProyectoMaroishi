@@ -52,7 +52,11 @@
 
 }
 .todo{
-  margin-left:1%;
+text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
 }
 .pho1{
   width: 350px;
