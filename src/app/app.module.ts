@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FacebookModule } from 'ngx-facebook';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './page/header/header.component';
 import { FooterComponent } from './page/footer/footer.component';
@@ -115,7 +115,8 @@ import {RecuperaComponent} from "./page/recupera/recupera.component";
     CheckboxModule,
     DialogModule,
     ImageModule,SwiperModule,NgxPayPalModule,
-    FileUploadModule,AccordionModule,InputTextModule
+    FileUploadModule,AccordionModule,InputTextModule,
+    FacebookModule.forRoot()
 
 
   ],

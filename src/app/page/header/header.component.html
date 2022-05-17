@@ -190,7 +190,7 @@
                     routerLink="/Productos/aguapvcgalva">Conexiones de Agua Galvanizado</a>
             </div>
             <div><a [state]="{ categoria: 1,sub:'Check' }" routerLink="/Productos/check">Conexiones de bronce </a></div>
-            <div><a href="#">Medidores</a></div>
+            <div><a [state]="{categoria:1,sub:'Medidores'}" routerLink="/Productos/MedidoresAgua">Medidores</a></div>
             <div><a [state]="{ categoria: 1,sub:'Llaves con Universal' }" routerLink="/Productos/agualuni">Unión
               universal</a></div>
             <div><a [state]="{ categoria: 1,sub:'Teflones' }" routerLink="/Productos/aguateflo">Teflones</a></div>
@@ -260,12 +260,11 @@
       <li class="desplegar5"><a href="#">GRIFERIA</a>
         <div class="sub-menu5">
           <div class="menu5">
-            <div><a [state]="{ categoria: 4,sub:'Canos de jardin' }" routerLink="/Productos/caños">Caños
-              de jardin</a></div>
+            <div><a [state]="{ categoria: 4,sub:'Canos de jardin' }" routerLink="/Productos/caños">Caños de jardin</a></div>
             <div><a [state]="{ categoria: 4,sub:'Llaves de ducha' }" routerLink="/Productos/Llaves_ducha">Llaves y Mezcladoras de ducha</a></div>
-            <div><a [state]="{ categoria: 4,sub:'Articulos para Duchas' }" routerLink="/Productos/grifart">Caños</a></div>
+           <!-- <div><a [state]="{ categoria: 4,sub:'Articulos para Duchas' }" routerLink="/Productos/grifart">Caños</a></div>-->
             <div><a [state]="{ categoria: 4,sub:'Llaves de cocina cisne' }" routerLink="/Productos/Cocina_Cisne">Llaves de cocina cisne</a></div>
-            <div><a [state]="{ categoria: 4,sub:'Difusor de ducha y manguera' }" routerLink="/Productos/Difusor_ducha">Difusor de ducha y manguera</a></div>
+            <!--<div><a [state]="{ categoria: 4,sub:'Difusor de ducha y manguera' }" routerLink="/Productos/Difusor_ducha">Difusor de ducha y manguera</a></div>-->
             <div><a href="#">Rejillas</a></div>
             <div><a href="#">Sumideros</a></div>
           </div>
