@@ -7,20 +7,63 @@
 }
 .caja{
   border-radius:5px;
-  width: 200px;
-  height: 80px;
-  font-size: 14px!important;
-  color:#000000!important;
+  width: 162px;
+  height: auto;
   border:solid 1px #ccc;
   background:#fff;
-  padding: 5px;
 }
-button{
-  width: 100%;
+.ss{
+  width: 150px;
 margin-top:10px;
   border-bottom: solid 1px #ccc;
+  font-size: 12px;
+  color:#000000;
+
 }
-button:hover{
+.ss:hover{
   background: #84c3ff;
+}
+
+@media only screen and (max-width: 1000px) {
+ .login-box{
+   left:81vw;
+ }
+}
+@media only screen and (max-width: 900px) {
+  .login-box{
+    left:80vw;
+  }
+}@media only screen and (max-width: 800px) {
+  .login-box{
+    left:78vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .login-box{
+    left:73vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login-box{
+    left:65vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .login-box{
+    left:58vw;
+    top:10vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .login-box{
+    left:56vw;
+    top:10vh;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .login-box{
+    left:48vw;
+    top:10vh;
+  }
 }
 
