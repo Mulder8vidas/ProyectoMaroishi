@@ -1,19 +1,14 @@
-.icons {
-  background: #000;
-  border: none;
-  list-style: none;
 
-}
 
 .adrian {
-  background: #DCDADA;
+  background: none;
   display: flex;
   padding-left: 15px;
   column-gap: 20px;
 }
 
 .icons li {
-  background: #DCDADA;
+  background: none;
 
 
 }
@@ -23,7 +18,7 @@
   margin: 0;
   width: 100%;
   height: 30px;
-  background: #DCDADA;
+  background: #26a96c;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -32,21 +27,22 @@
 }
 
 .cabecera a {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 13px;
-  background: #DCDADA;
+  font-size: 15px;
   border: none;
-
+font-family: 'Roboto Condensed', sans-serif;
 }
 
 .cabecera a:hover {
-  color: #0c4a97;
+  color: #baefd2;
 }
 
-.cabecera a i {
-  background: #DCDADA;
-
+.icons2 i{
+  font-size: 20px;
+}
+.icons2{
+  padding-right: 10%;
 }
 
 .superior {
